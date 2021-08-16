@@ -1,0 +1,26 @@
+<%- include('./partials/header') -%>
+
+
+<div class="bigContainer">
+<div class="container">
+    <a href="/add" class="adda"><div class="box add">
+        <h1>If you Want <br> to add your<br>favourite book<br>Click Here<br></h1>
+        <img src="https://img-premium.flaticon.com/png/512/1665/premium/1665629.png?token=exp=1629096350~hmac=d6edd38e5784cc2d86b205cfbade79b7" alt="">
+    </div></a>
+    <% for(let i = 0; library.length > i; i++){ %>
+    <div class="box">
+        <div class="cover">
+        <img src="<%= library[i].URL %>" alt="cover" class="coverImg">
+        </div>
+        <h1 class="Name"><%= library[i].Name %></h1>
+        <p class="Author"><%= library[i].Author %></p>
+        <p class="Rate"><%= library[i].Rating + ' / 5'%></p>
+        <p class="Editor">Reviewed By <span><%=  library[i].Editor %></span></p>  
+    </div>
+    <% } %>
+</div>
+</div>
+
+
+
+<%- include('./partials/footer') -%>

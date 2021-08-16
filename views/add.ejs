@@ -1,0 +1,33 @@
+<%- include('./partials/header') -%>
+
+<div class="postContainer">
+    <h1>Add your Favourite Book</h1><br>
+
+    <form method="post" class="form">
+
+        
+        <label for="fname">Add URl Of Book Cover (copy it from Google)</label><br>
+        <input type="text" name="BookURL"><br>
+
+        <!-- // title -->
+        <label for="fname">Name of the Book</label ><br>
+        <input type="text" name="BookTitle"><br>
+
+        <!-- Author -->
+        <label for="fname">Author of the Book</label><br>
+        <input type="text" name="BookAuthor"><br>
+
+        <!-- Rating -->
+        <label for="fname" >Give Rating (out of 5)</label><br>
+        <input type="text" name="BookRating"><br>
+
+        <!-- Adder name -->
+        <label for="fname">Enter your Name</label><br>
+        <input type="text" name="BookEditor"><br>
+
+        <!-- submit button -->
+        <button type="submit">Publish</button><br>
+        </form>
+</div>
+
+<%- include('./partials/footer') -%>

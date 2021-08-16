@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-color: #ebebeb;
+}
+.header {
+  background-color: #a8dadc;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  width: auto;
+  padding-left: 5%;
+}
+
+.box {
+  background-color: #a8dadc;
+
+  height: 50vh;
+  width: 35vh;
+  margin: 3vh;
+  padding: 2vh;
+  border-radius: 1rem;
+}
+.cover {
+  height: 30vh;
+  width: 35vh;
+  background-color: #f1faee;
+  display: flex;
+  justify-content: center;
+  border-radius: 2px;
+}
+.coverImg {
+  height: 30vh;
+  width: auto;
+}
+.Name {
+  color: #182933;
+  padding-top: 10px;
+}
+
+.Author {
+  color: #2b4c5f;
+  padding-top: 10px;
+  font-weight: bolder;
+}
+
+.Rate {
+  color: #2a9d8f;
+  padding-top: 10px;
+}
+.Editor {
+  padding-top: 5px;
+  color: darkslategrey;
+}
+
+.Editor span {
+  color: #182933;
+  background-color: #fdffb6;
+  padding: 1px 2px 1px 2px;
+  border-radius: 2px;
+}
+.madeBy {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  bottom: 0;
+  position: sticky;
+}
+.postContainer {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.postContainer h1 {
+  position: absolute;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #182933;
+}
+
+.form {
+  padding-top: 10vh;
+}
+
+.form input {
+  margin: 10px;
+  height: 30px;
+  width: 19rem;
+  padding: 1px 5px 1px 5px;
+  border: none;
+  text-decoration: none;
+  outline: none;
+}
+
+label {
+  color: #3e5765;
+}
+
+button {
+  color: #182933;
+  background: #fdffb6;
+  border: none;
+  outline: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+button:hover {
+  color: #fdffb6;
+  background: #182933;
+}
+
+.adda {
+  text-decoration: none;
+}
+.add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.add h1 {
+  color: #182933;
+
+  margin-bottom: 2rem;
+}
+.add h1:hover {
+  color: #2a9d8f;
+}
+
+.add img {
+  height: 10vh;
+  width: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    width: auto;
+    padding-left: 10%;
+  }
+}
